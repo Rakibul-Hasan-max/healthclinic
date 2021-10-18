@@ -58,7 +58,7 @@ const Header = () => {
 
 const Navbar = () => {
     return (
-        <div className="naved">
+        <div sticky="top" className="naved">
             <div>
                 <Link to ="/"><img className="logoname" src={logo} alt=""/></Link>
             </div>

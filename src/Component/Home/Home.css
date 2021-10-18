@@ -1,0 +1,14 @@
+.mediciva{
+    text-align: center;
+    margin: 80px;
+}
+.carded{
+    display: flex;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+.card{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 30px;
+}
