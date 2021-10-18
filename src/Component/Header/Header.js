@@ -58,17 +58,17 @@ const Header = () => {
 
 const Navbar = () => {
     return (
-        <div className="nav">
+        <div className="naved">
             <div>
                 <Link to ="/"><img className="logoname" src={logo} alt=""/></Link>
             </div>
             <nav>
-                <Link className="linked" to ="/home">Home</Link>
-                <Link className="linked" to ="/about">About</Link>
-                <Link className="linked" to ="/departments">Departments</Link>
-                <Link className="linked" to ="/doctors">Doctors</Link>
-                <Link className="linked" to ="/blog">Blog</Link>
-                <Link className="linked" to ="/contact">Contact</Link>
+                <Link to ="/home">Home</Link>
+                <Link to ="/about">About</Link>
+                <Link to ="/departments">Departments</Link>
+                <Link to ="/doctors">Doctors</Link>
+                <Link to ="/blog">Blog</Link>
+                <Link to ="/contact">Contact</Link>
             </nav>
         </div>
     );
