@@ -1,10 +1,13 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Header.css';
+import logo from '../../images/logo.png'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         < >
+        <Navbar></Navbar>
             <Carousel>
             <Carousel.Item>
                 <img
@@ -51,5 +54,25 @@ const Header = () => {
         </ >
     );
 };
+
+
+const Navbar = () => {
+    return (
+        <div className="nav">
+            <div>
+                <Link to ="/"><img className="logoname" src={logo} alt=""/></Link>
+            </div>
+            <nav>
+                <Link className="linked" to ="/home">Home</Link>
+                <Link className="linked" to ="/about">About</Link>
+                <Link className="linked" to ="/departments">Departments</Link>
+                <Link className="linked" to ="/doctors">Doctors</Link>
+                <Link className="linked" to ="/blog">Blog</Link>
+                <Link className="linked" to ="/contact">Contact</Link>
+            </nav>
+        </div>
+    );
+};
+
 
 export default Header;

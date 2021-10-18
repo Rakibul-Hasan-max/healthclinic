@@ -5,3 +5,17 @@
 .text{
     color: black;
 }
+.nav{
+    /* background-color: #06B2B6; */
+    background-color: #b9d2d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linked{
+    text-decoration: none;
+}
+.logoname{
+    width: 250px;
+    height: 100px;
+}
