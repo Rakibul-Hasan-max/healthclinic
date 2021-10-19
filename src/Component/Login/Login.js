@@ -5,7 +5,7 @@ const Login = () => {
     return (
         <div>
             <div className=" container body">
-                <div className="row align-items-center" style={{ height: "100vh" }}>
+                <div className="row align-items-center" style={{ height: "80vh" }}>
                     <div className="col-md-6 shadow p-5">
                         <div>
                             <h2>Please Login</h2>
