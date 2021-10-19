@@ -1,24 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useFirebase from '../Hooks/useFirebase';
-// import useAuth from '../Hooks/useAuth';
 import './Login.css';
 
 
 const Login = () => {
-    // const {signInUsingGoogle} = useAuth();
     const {signInUsingGoogle} = useFirebase();
 
+    const[email, setEmail] = useState('');
+    const[password, setPassword] = useState('');
+
     const handleEmailChange = e =>{
-    console.log(e.target.value);
+    setEmail(e.target.value);
     }
 
     const handlePasswordChange = e =>{
-    console.log(e.target.value);
+    setPassword(e.target.value);
     }
 
     const handleRegistration = e => {
-	console.log('regi done');
+	console.log(email, password);
     e.preventDefault();
     }
 
