@@ -10,6 +10,7 @@ const Login = () => {
 
     const[email, setEmail] = useState('');
     const[password, setPassword] = useState('');
+    const[error, setError] = useState('');
 
     const handleEmailChange = e =>{
     setEmail(e.target.value);
@@ -20,14 +21,18 @@ const Login = () => {
     }
 
     const handleRegistration = e => {
+    e.preventDefault();
 	console.log(email, password);
     const auth = getAuth();
+    if(password.length < 6) {
+        setError('Password should be at least 6 characters')
+        return;
+    }
     createUserWithEmailAndPassword(auth, email, password)
         .then(result => {
         const user = result.user;
         console.log(user);
     })
-    e.preventDefault();
     }
 
     return (
@@ -52,7 +57,8 @@ const Login = () => {
                                 <label htmlFor="" className="text-danger ms-2">Forgot your password?</label>
                                 <Link className="ms-5" to="/register">Register now</Link>
                             </div>
-                            <div className="from-group mt-3">
+                            <div className="text-danger">{error}</div>
+                            <div className="from-group mt-3">                                
                                 <button onClick={handleRegistration} className="btn btn-success" type="submit">Login</button>
                             </div>
                         </div>
