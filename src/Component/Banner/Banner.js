@@ -9,7 +9,8 @@ const Banner = () => {
             <Carousel.Item>
                 <img
                 className="d-block height"
-                src="https://media.istockphoto.com/photos/three-doctors-woman-in-hijab-and-two-men-in-medical-apparel-patients-picture-id1335258478?b=1&k=20&m=1335258478&s=170667a&w=0&h=DTJXO34uhCFf5_ALJe2xcabLIJfvkNapwL53HN8NYUg="
+                src="https://media.istockphoto.com/photos/doctors-and-nurses-taking-care-of-patients-in-icu-picture-id1254958416?b=1&k=20&m=1254958416&s=170667a&w=0&h=h0EeHg18gYo5Qd0jiClnJJOU9WW4XqFVYGOOyZksdXs="
+                alt="Second slide"
                 alt="First slide"
                 />
                 <Carousel.Caption className="text">
@@ -22,8 +23,7 @@ const Banner = () => {
             <Carousel.Item>
                 <img
                 className="d-block  height"
-                src="https://media.istockphoto.com/photos/doctors-and-nurses-taking-care-of-patients-in-icu-picture-id1254958416?b=1&k=20&m=1254958416&s=170667a&w=0&h=h0EeHg18gYo5Qd0jiClnJJOU9WW4XqFVYGOOyZksdXs="
-                alt="Second slide"
+                src="https://media.istockphoto.com/photos/three-doctors-woman-in-hijab-and-two-men-in-medical-apparel-patients-picture-id1335258478?b=1&k=20&m=1335258478&s=170667a&w=0&h=DTJXO34uhCFf5_ALJe2xcabLIJfvkNapwL53HN8NYUg="
                 />
 
                 <Carousel.Caption className="text">

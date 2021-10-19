@@ -1,21 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import useAuth from '../Hooks/useAuth';
-import './Login.css';
+import './Register.css';
 
-
-const Login = () => {
-    // const {signInUsingGoogle} = useAuth();
+const Register = () => {
     return (
         <div>
             <div className=" container body">
                 <div className="row align-items-center" style={{ height: "80vh" }}>
                     <div className="col-md-6 shadow p-5">
                         <div>
-                            <h2>Please Login</h2>
+                            <h2>Please Register</h2>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="">User Email</label>
+                            <label htmlFor="">Name</label>
+                            <input type="text" className="form-control" />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="">Email</label>
+                            <input type="email" className="form-control" />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="">Address</label>
                             <input type="text" className="form-control" />
                         </div>
                         <div className="form-group">
@@ -24,14 +29,13 @@ const Login = () => {
                         </div>
                         <div className="form-group">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"></input>
-                            <label htmlFor="" className="text-danger ms-2">Forgot your password?</label>
-                            <Link className="ms-5" to="/register">Register now</Link>
+                            <Link className="ms-2" to="/login">Already Registered?</Link>
                         </div>
                         <div className="from-group mt-3">
-                            <button className="btn btn-success" type="submit">Login</button>
+                            <button className="btn btn-success" type="submit">Register</button>
                         </div>
                         <div className="from-group mt-5">
-                            <button  className="btn btn-primary" >Google Sign in</button>
+                            <button className="btn btn-primary" >Google Sign in</button>
                         </div>
                     </div>
                 </div>
@@ -40,7 +44,4 @@ const Login = () => {
     );
 };
 
-export default Login;
-
-
-// onClick={signInUsingGoogle}
+export default Register;
