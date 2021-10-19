@@ -34,7 +34,7 @@ const Home = () => {
                     <p>Common hospital support units include a dispensary or pharmacy, pathology, and radiology, and on the non-medical side.</p>
                 </div>
                 <div>
-                    <CardGroup>
+                    <CardGroup className="container">
                         <Card>
                             <Card.Img variant="top" src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG9zcGl0YWwlMjBkb2N0b3J8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
                             <Card.Body>
