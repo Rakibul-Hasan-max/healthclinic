@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useFirebase from '../Hooks/useFirebase';
 // import useAuth from '../Hooks/useAuth';
 import './Login.css';
 
 
 const Login = () => {
     // const {signInUsingGoogle} = useAuth();
+    const {signInUsingGoogle} = useFirebase();
+
     return (
         <div>
             <div className=" container body">
@@ -31,7 +34,7 @@ const Login = () => {
                             <button className="btn btn-success" type="submit">Login</button>
                         </div>
                         <div className="from-group mt-5">
-                            <button  className="btn btn-primary" >Google Sign in</button>
+                            <button onClick={signInUsingGoogle} className="btn btn-primary" >Google Sign in</button>
                         </div>
                     </div>
                 </div>
@@ -41,6 +44,3 @@ const Login = () => {
 };
 
 export default Login;
-
-
-// onClick={signInUsingGoogle}
