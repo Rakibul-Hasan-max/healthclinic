@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useFirebase from '../Hooks/useFirebase';
 import './Login.css';
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 
 const Login = () => {
@@ -20,6 +21,12 @@ const Login = () => {
 
     const handleRegistration = e => {
 	console.log(email, password);
+    const auth = getAuth();
+    createUserWithEmailAndPassword(auth, email, password)
+        .then(result => {
+        const user = result.user;
+        console.log(user);
+    })
     e.preventDefault();
     }
 
@@ -34,14 +41,14 @@ const Login = () => {
                             </div>
                             <div className="form-group">
                                 <label htmlFor="">User Email</label>
-                                <input onBlur={handleEmailChange} type="text" className="form-control" />
+                                <input onBlur={handleEmailChange} type="text" required className="form-control" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="">Password</label>
-                                <input onBlur={handlePasswordChange} type="password" className="form-control" />
+                                <input onBlur={handlePasswordChange} type="password" required className="form-control" />
                             </div>
                             <div className="form-group">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"></input>
+                                <input className="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"></input>
                                 <label htmlFor="" className="text-danger ms-2">Forgot your password?</label>
                                 <Link className="ms-5" to="/register">Register now</Link>
                             </div>
