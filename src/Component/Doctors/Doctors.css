@@ -1,0 +1,16 @@
+.doctorhead{
+    text-align: center;
+    margin: 50px;
+}
+.doctorhead h5{
+    color: #0d0daa;
+}
+.docimg{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.docimg img{
+    height: 250px;
+    width: 250px;
+}
