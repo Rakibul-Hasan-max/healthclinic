@@ -1,12 +1,12 @@
 import React from 'react';
 import { Card, CardGroup } from 'react-bootstrap';
-import Header from '../Header/Header';
+import Banner from '../Banner/Banner';
 import './Home.css';
 
 const Home = () => {
     return (
         <div>
-            <Header></Header>
+            <Banner></Banner>
             <div className="mediciva">
                 <h2>Your health partner</h2>
                 <p>From testing for patients and staff, to enhanced safety measures, to telemedicine. We are making sure that you are able.</p>
