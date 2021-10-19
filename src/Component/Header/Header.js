@@ -20,7 +20,7 @@ const Header = () => {
                     <Link to ="/blog">Blog</Link>
                     <Link to ="/login">Login</Link>
                     <Link to="/register">Register</Link>
-                    {user?.email && <button onClick={logout} >Logout</button>}
+                    {user?.email && <button onClick={logout} className="btn btn-success" >Logout</button>}
                 </nav>
             </div>
         </div>
