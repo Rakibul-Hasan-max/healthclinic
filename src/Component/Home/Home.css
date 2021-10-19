@@ -11,6 +11,11 @@
     border: 1px solid gray;
     border-radius: 5px;
     padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.card i{
+    color: #1518e0;
 }
 .accorn{
     display: flex;

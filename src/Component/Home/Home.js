@@ -13,14 +13,17 @@ const Home = () => {
             </div>
             <div className="container carded">
                 <div className="card">
+                    <i class="fas fa-hospital-user"></i>
                     <h3>24/7 Service</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, exercitationem. Itaque, consectetur atque. Maxime, nesciunt.</p>
                 </div>
                 <div className="card">
+                    <i class="fas fa-stethoscope"></i>
                     <h3>Special Care</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, exercitationem. Itaque, consectetur atque. Maxime, nesciunt.</p>
                 </div>
                 <div className="card">
+                    <i class="fas fa-user-md"></i>
                     <h3>Quality Doctors</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, exercitationem. Itaque, consectetur atque. Maxime, nesciunt.</p>
                 </div>
