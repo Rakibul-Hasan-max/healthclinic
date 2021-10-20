@@ -9,6 +9,7 @@ import Header from './Component/Header/Header';
 import Home from './Component/Home/Home';
 import Login from './Component/Login/Login';
 import NotFound from './Component/NotFound/NotFound';
+import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
 import Register from './Component/Register/Register';
 
 
@@ -28,12 +29,12 @@ function App() {
             <Route path="/departments">
               <Departments></Departments>
             </Route>
-            <Route path="/doctors">
+            <PrivateRoute path="/doctors">
               <Doctors></Doctors>
-            </Route>
-            <Route path="/blog">
+            </PrivateRoute>
+            <PrivateRoute path="/blog">
               <Blog></Blog>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
