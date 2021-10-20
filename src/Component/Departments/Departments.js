@@ -36,21 +36,14 @@ const Lefts = () => {
 
 const Left = (props) => {
     console.log(props.left);
-    const {name, description} =  props.left;
+    const {name, description, src} =  props.left;
     return (
-        
-        <div className="container">
-            <div className="row">
-                <div className="col g-3 mx-2 card none">
-                    <h2>{name}</h2>
-                    <p>Description: {description}</p>
-                </div>
-                <div class="col g-3 mx-2 card none">
-                    <h2>{name}</h2>
-                    <p>Description: {description}</p>
-                </div>
-            </div>
-        </div> 
+        <div className="container card">
+            <img className="image" src={src} alt="" />
+            <h2>{name}</h2>
+            <p>Description: {description}</p>
+            <button className="btn btn-info">Details</button>
+        </div>
     );
 };
 

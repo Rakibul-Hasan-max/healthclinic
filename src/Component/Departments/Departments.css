@@ -5,3 +5,12 @@
 .data h1{
     color: #1b1bb8;
 }
+.image{
+    width: 500px;
+}
+.card{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+}
