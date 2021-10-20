@@ -1,12 +1,12 @@
 import { createUserWithEmailAndPassword, getAuth } from '@firebase/auth';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import useFirebase from '../Hooks/useFirebase';
+import useAuth from '../Hooks/useAuth';
 import './Register.css';
 
 const Register = () => {
 
-    const {signInUsingGoogle} = useFirebase();
+    const {signInUsingGoogle} = useAuth();
 
     const[email, setEmail] = useState('');
     const[password, setPassword] = useState('');
